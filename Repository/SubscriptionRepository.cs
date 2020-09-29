@@ -71,7 +71,7 @@ namespace MailOrderPharmacySubscription.Repository
         {
             string data = JsonConvert.SerializeObject(obj);
             
-            Uri baseAddress = new Uri("https://localhost:44322/api");
+            Uri baseAddress = new Uri("https://103.240.96.178:44322/api");
             HttpClient client = new HttpClient();
             client.BaseAddress = baseAddress;
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
